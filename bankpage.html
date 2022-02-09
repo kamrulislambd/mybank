@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banking Page</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -28,11 +29,47 @@
             </div>
             <div class="balance bg-cyan-600 p-8 text-white font-bold">
               <h3 class="text-2xl">Balance</h3>
-              <h2 class="text-4xl">$00</h2>
+              <h2 class="text-4xl">$1640</h2>
             </div>
           </div>
         </div>
       </section>
+      <section class="w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-5 py-8">
+          <div class="account-details bg-cyan-300 p-8">
+            <h2 class="text-3xl font-medium my-4">Please Deposite</h2>
+            <input
+              class="w-2/4 border border-black p-2 mb-5 block"
+              type="text"
+              placeholder="$ Amount of Deposit"
+            />
+
+            <button
+              class="text-2xl rounded px-8 py-3 text-white bg-yellow-600"
+              id="deposit-btn"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="account-details bg-cyan-300 p-8">
+            <h2 class="text-3xl font-medium my-4">Please Withdraw</h2>
+            <input
+              class="w-2/4 border border-black p-2 mb-5 block"
+              type="text"
+              placeholder="$ Amount of Withdraw"
+            />
+
+            <button
+              class="text-2xl rounded px-8 py-3 text-white bg-pink-700"
+              id="deposit-btn"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="js/bankpage.js"></script>
   </body>
 </html>
