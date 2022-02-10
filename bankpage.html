@@ -25,7 +25,7 @@
             </div>
             <div class="withdraw bg-violet-700 p-8 text-white font-bold">
               <h3 class="text-2xl">Withdraw</h3>
-              <h2 class="text-4xl">$00</h2>
+              <h2 class="text-4xl">$<span id="withdraw-balance">00</span></h2>
             </div>
             <div class="balance bg-cyan-600 p-8 text-white font-bold">
               <h3 class="text-2xl">Balance</h3>
@@ -39,7 +39,7 @@
           <div class="account-details bg-cyan-300 p-8">
             <h2 class="text-3xl font-medium my-4">Please Deposite</h2>
             <input
-              id='input-field'
+              id="input-field"
               class="w-2/4 border border-black p-2 mb-5 block"
               type="text"
               placeholder="$ Amount of Deposit"
@@ -55,6 +55,7 @@
           <div class="account-details bg-cyan-300 p-8">
             <h2 class="text-3xl font-medium my-4">Please Withdraw</h2>
             <input
+              id="withdraw-amount"
               class="w-2/4 border border-black p-2 mb-5 block"
               type="text"
               placeholder="$ Amount of Withdraw"
@@ -62,7 +63,7 @@
 
             <button
               class="text-2xl rounded px-8 py-3 text-white bg-pink-700"
-              id="deposit-btn"
+              id="withdraw-btn"
             >
               Withdraw
             </button>

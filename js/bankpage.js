@@ -19,4 +19,28 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
 
     const totalDepositBalance = newTotalBalance + newDepositAmount;
     totalBalance.innerText = totalDepositBalance;
+});
+
+//withdraw balance
+document.getElementById('withdraw-btn').addEventListener('click', function(){
+    const withdrawValue = document.getElementById('withdraw-amount').value;
+    const withdrawTotalAmount = parseFloat(withdrawValue);
+    
+    //withdraw balance
+    const withdrawBalance = document.getElementById('withdraw-balance');
+    const withdrawTotalText = withdrawBalance.innerText;
+    const withdrawAmount = parseFloat(withdrawTotalText);
+    const newTotalWithdraw = withdrawAmount + withdrawTotalAmount;
+    
+    withdrawBalance.innerText = newTotalWithdraw;
+    document.getElementById('withdraw-amount').value = '';
+
+    //Withdraw Total Balance Update
+
+    const totalWithdrawBalance = document.getElementById('total-balance').innerText;
+    const totalWithdrawTextBalance = parseFloat(totalWithdrawBalance);
+    const newTotalWithdrawAmount = totalWithdrawTextBalance - withdrawTotalAmount;
+
+    document.getElementById('total-balance').innerText = newTotalWithdrawAmount;
+
 })
